@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PawStyle - Luxury Pet Fashion Boutique</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI, sans-serif;
+}
+
+:root{
+--primary:#ff6b8b;
+--secondary:#7b68ee;
+--accent:#20b2aa;
+--light:#fff9fb;
+--dark:#333;
+}
+
+body{
+background:var(--light);
+color:var(--dark);
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+}
+
+header{
+background:#fff;
+box-shadow:0 2px 15px rgba(0,0,0,.1);
+position:sticky;
+top:0;
+}
+
+.header-container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+.logo{
+font-size:26px;
+font-weight:800;
+color:var(--primary);
+text-decoration:none;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+}
+
+.nav-links li{
+margin-left:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+font-weight:600;
+color:#333;
+}
+
+.btn{
+background:linear-gradient(45deg,var(--primary),var(--secondary));
+color:#fff;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+text-decoration:none;
+display:inline-block;
+}
+
+.hero{
+background:linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)),
+url("https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&w=1350&q=80");
+background-size:cover;
+padding:100px 0;
+text-align:center;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.products-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.product-card{
+background:#fff;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.product-img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.product-info{
+padding:20px;
+}
+
+.product-title{
+font-size:1.2rem;
+margin-bottom:10px;
+}
+
+.product-price{
+color:var(--primary);
+font-size:1.4rem;
+font-weight:700;
+margin-bottom:10px;
+}
+
+footer{
+background:#333;
+color:#ccc;
+padding:40px 0;
+text-align:center;
+margin-top:60px;
+}
+
+.ad-banner{
+background:linear-gradient(45deg,#ffd166,var(--accent));
+padding:12px;
+margin-top:20px;
+border-radius:10px;
+font-weight:600;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container header-container">
+
+<a class="logo"><i class="fa fa-paw"></i> PawStyle</a>
+
+<ul class="nav-links">
+<li><a href="#">Home</a></li>
+<li><a href="#">Products</a></li>
+<li><a href="#">Collections</a></li>
+<li><a href="#">Blog</a></li>
+</ul>
+
+<a class="btn">Shop Now</a>
+
+</div>
+</header>
+
+
+<section class="hero">
+
+<div class="container">
+
+<h1>Fashion That Fits Their Personality</h1>
+
+<p>Luxury designer fashion for stylish pets.</p>
+
+<a class="btn">Explore Collection</a>
+
+<div class="ad-banner">
+FREE SHIPPING over $50 | Code: PAWFASHION20
+</div>
+
+</div>
+
+</section>
+
+
+<div class="container">
+
+<h2 style="text-align:center;margin-top:60px;">Trending Pet Fashion</h2>
+
+<div class="products-grid">
+
+<div class="product-card">
+<img class="product-img"
+src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=1350&q=80">
+<div class="product-info">
+<h3 class="product-title">Floral Summer Dress</h3>
+<div class="product-price">$34.99</div>
+<a class="btn">Add to Cart</a>
+</div>
+</div>
+
+<div class="product-card">
+<img class="product-img"
+src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=1350&q=80">
+<div class="product-info">
+<h3 class="product-title">Formal Bow Tie</h3>
+<div class="product-price">$19.99</div>
+<a class="btn">Add to Cart</a>
+</div>
+</div>
+
+<div class="product-card">
+<img class="product-img"
+src="https://images.unsplash.com/photo-1554456854-55a089fd4cb2?auto=format&fit=crop&w=1350&q=80">
+<div class="product-info">
+<h3 class="product-title">Urban Hoodie</h3>
+<div class="product-price">$29.99</div>
+<a class="btn">Add to Cart</a>
+</div>
+</div>
+
+<div class="product-card">
+<img class="product-img"
+src="https://images.unsplash.com/photo-1560743641-3914f2c45636?auto=format&fit=crop&w=1350&q=80">
+<div class="product-info">
+<h3 class="product-title">Pet Sunglasses</h3>
+<div class="product-price">$14.99</div>
+<a class="btn">Add to Cart</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<footer>
+
+<p>© 2026 PawStyle Pet Fashion</p>
+
+</footer>
+
+
+<script>
+
+/* simple cart counter */
+
+document.querySelectorAll('.product-card .btn').forEach(btn=>{
+btn.addEventListener('click',function(e){
+e.preventDefault()
+this.innerText="Added!"
+})
+})
+
+</script>
+
+
+
+
+
+</body>
+</html>
